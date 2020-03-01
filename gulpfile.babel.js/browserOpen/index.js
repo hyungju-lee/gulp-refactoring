@@ -4,7 +4,7 @@ import open from "gulp-open";
 
 export const BrowserOpen = () => {
     const options = {
-        uri: 'http://localhost:' + config.port,
+        uri: `http://localhost:${config.port}`,
         app: config.browser //chrome, firefox, iexplore, opera, safari
     };
     return src(config.path.browser.dest)
